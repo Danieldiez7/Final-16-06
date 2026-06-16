@@ -1,0 +1,169 @@
+/* shift + alt + a
+selector {
+propiedad: valor;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400..900&display=swap');
+
+body {
+   margin: 3px;
+   padding: 0px;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(246, 198, 198);
+}
+
+.navbar-brand {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+
+.nav-item a {
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.logoPeru {
+   width: 70px;
+   height: 70px;
+   justify-content: left;
+   margin-left: auto;
+}
+
+
+h2 {
+   color: rgb(196, 17, 17);
+   font-size: 25px;
+
+}
+
+h3 {
+   color: rgb(19, 14, 14);
+   font-size: 15px;
+   justify-content: left;
+}
+
+p{
+   display: flex;
+   flex-direction: column;
+   font-family: sans-serif ;
+   font-weight: bold;
+   font-size: large;
+}
+ul{
+   list-style: none;
+
+}
+.pie {
+   display:flex;
+   gap: 15px;   
+
+}
+
+
+
+.cinzel {
+   font-family: "Cinzel", serif;
+   font-weight: 200px;
+   font-size: 50px;
+   text-align: center;
+}
+
+.abel {
+   font-family: "Abel", sans-serif;
+   font-weight: 200px;
+   font-size: 40px;
+   text-align: center;
+}
+.p-card {
+  font-family: "Abel", sans-serif;
+   font-size: 25px;
+   padding: 20px;
+   font-weight: bold;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px 20px 20px 20px;
+}
+
+.box {
+
+   border: 5px solid rgb(0, 0, 0);
+   padding: 0px;
+   width: 95%;
+   height: 95%;
+}
+
+.boxModel img {
+   border: 2px solid rgb(233, 227, 227);
+   padding: 20px 20px 20px 20px solid black;
+   margin: 50px 50px 50px 50px;
+   ;
+
+}
+
+
+
+.Titulo2 {
+   font-family: "Cinzel", serif;
+   font-weight: 200px;
+   font-size: 50px;
+   text-align: center;
+   padding: 50px;
+}
+
+.bi {
+   font-size: 30px;
+   color: rgb(29, 27, 27);
+   margin: 25px
+}
+
+.titulo2 {
+   font-family: "Cinzel", serif;
+   font-weight: 200px;
+   font-size: 50px;
+   text-align: center;
+   padding: 50px;
+}
+.servicios { 
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   padding: 20px;
+   font-family: "Abel", sans-serif;
+   font-weight: bold;
+   font-size:large;
+
+}
+.paquetes{
+   display: flex;
+   flex-direction: column;
+   font-family: sans-serif ;
+   font-weight: bold;
+   font-size: large;
+}
+.contacto{
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   padding: 30px;
+   font-family: "Abel", sans-serif;
+   font-size: 25px;
+}
+
+.mapa {
+   display: flex;
+   justify-content: center;
+   width: 40%;
+   margin: auto;
+  
+}  
