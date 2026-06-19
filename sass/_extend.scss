@@ -1,0 +1,9 @@
+%flex-column-sans-bold-large {
+  @include flex-layout(column);
+  @include text-style(sans-serif, bold, large);
+}
+
+%cinzel-large-centered {
+  @include text-style("Cinzel", serif, 700, 50px, center);
+}
+

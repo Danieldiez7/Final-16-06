@@ -1,11 +1,10 @@
-/* shift + alt + a
-selector {
-propiedad: valor;
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400..900&display=swap');
 
 body {
+   
+ width: 100%;
+    max-width: 414px;
     margin: 3px;
     padding: 0px;
     min-height: 100vh;
@@ -13,7 +12,6 @@ body {
     flex-direction: column;
     background-color: rgb(246, 198, 198);
 }
-
 .navbar-brand {
     display: block;
     margin-left: auto;
@@ -64,14 +62,14 @@ ul {
 
 .cinzel {
     font-family: "Cinzel", serif;
-    font-weight: 700; /* Fixed from 200px */
+    font-weight: 700; 
     font-size: 50px;
     text-align: center;
 }
 
 .abel {
     font-family: "Abel", sans-serif;
-    font-weight: 400; /* Fixed from 200px */
+    font-weight: 400; 
     font-size: 40px;
     text-align: center;
 }
@@ -100,12 +98,12 @@ ul {
     border: 2px solid rgb(233, 227, 227);
     padding: 20px; 
     margin: 50px;
-    /* Separated the invalid padding-border combo */
+  
 }
 
 .Titulo2, .titulo2 {
     font-family: "Cinzel", serif;
-    font-weight: 700; /* Fixed from 200px */
+    font-weight: 700; 
     font-size: 50px;
     text-align: center;
     padding: 50px;
@@ -149,4 +147,18 @@ ul {
     justify-content: center;
     width: 40%;
     margin: auto;
+}
+
+@media (min-width: 415px) and (max-width: 1024px) {
+    body {
+        max-width: 1024px; 
+        background-color: rgb(218, 231, 170); 
+    }
+}
+@media (min-width: 1025px) {
+    body {
+        width: 100%;
+        max-width: 1920px; 
+        background-color: rgb(235, 145, 145); 
+    }
 }

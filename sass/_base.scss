@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400..900&display=swap');
+
+body {
+  width: 100%;
+  max-width: 414px;
+  margin: 3px;
+  padding: 0px;
+  min-height: 100vh;
+  @include flex-layout(column);
+  background-color: $bg-mobile;
+
+  // Anidamiento de Media Queries
+  @media (min-width: 415px) and (max-width: 1024px) {
+    max-width: 1024px;
+    background-color: $bg-tablet;
+  }
+
+  @media (min-width: 1025px) {
+    max-width: 1920px;
+    background-color: $bg-desktop;
+  }
+}
+
+.navbar-brand {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-item {
+  a {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.logoPeru {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+}
+
+h2 {
+  color: $text-red;
+  font-size: 25px;
+}
+
+h3 {
+  color: $text-dark;
+  font-size: 15px;
+  text-align: left;
+}
+
+// Uso de %extend para agrupar selectores con estilos idénticos
+p, .paquetes {
+  @extend %flex-column-sans-bold-large;
+}
+
+ul {
+  list-style: none;
+}
+
+.pie {
+  display: flex;
+  gap: 15px;
+}
+
+// Uso de %extend para unificar las clases tipográficas de Cinzel
+.cinzel, .Titulo2, .titulo2 {
+  @extend %cinzel-large-centered;
+}
+
+.Titulo2, .titulo2 {
+  padding: 50px; // Mantiene su relleno único sin afectar a .cinzel
+}
+
+.abel {
+  @include text-style("Abel", sans-serif, 400, 40px, center);
+}
+
+.p-card {
+  @include text-style("Abel", sans-serif, bold, 25px);
+  padding: 20px;
+}
+
+.container {
+  @include flex-layout(row, center, center);
+}
+
+.box {
+  border: 5px solid rgb(0, 0, 0);
+  padding: 0px;
+  width: 95%;
+  height: 95%;
+
+  .boxModel img {
+    border: 2px solid rgb(233, 227, 227);
+    padding: 20px;
+    margin: 50px;
+  }
+}
+
+.bi {
+  font-size: 30px;
+  color: rgb(29, 27, 27);
+  margin: 25px;
+}
+
+.servicios {
+  @include flex-layout(column, flex-start, flex-start);
+  @include text-style("Abel", sans-serif, bold, large);
+  padding: 20px;
+}
+
+.contacto {
+  @include flex-layout(column, flex-start, flex-start);
+  @include text-style("Abel", sans-serif, normal, 25px);
+  padding: 30px;
+}
+
+.mapa {
+  @include flex-layout(row, center);
+  width: 40%;
+  margin: auto;
+}
